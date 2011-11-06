@@ -50,14 +50,7 @@ makepkg -efi --skipinteg
 
 ### Starting this dwm build
 Edit your ~/.xinitrc file and copy and paste the following lines:
-```
-#!/bin/zsh
-mpd ~/.mpd/mpd.conf & # this is to start the music player daemon
-nitrogen --restore & # this is to set an image background
-xset +fp /usr/share/fonts/local & # must be done to make sure the symbols in Terminusmod show up 
-xset fp rehash & # see above
-exec ck-launch-session dbus-launch --sh-syntax --exit-with-session ~/.bin/startdwm
-```
+<script src="https://gist.github.com/1342580.js"> </script>
 
 Troubleshooting
 ----------------
