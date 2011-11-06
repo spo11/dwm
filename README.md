@@ -50,7 +50,7 @@ makepkg -efi --skipinteg
 
 ### Starting this dwm build
 Edit your ~/.xinitrc file and copy and paste the following lines:
-```bash
+```
 #!/bin/zsh
 mpd ~/.mpd/mpd.conf & # this is to start the music player daemon
 nitrogen --restore & # this is to set an image background
