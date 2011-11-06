@@ -1,7 +1,9 @@
 DWM
 ===============
 
-This is my own build of dwm-5.9 on Arch Linux.
+This is my own build of dwm-5.9 on Arch Linux. 
+
+![Preview](https://github.com/spo11/dwm/raw/master/screenshot.png)
 
 Patches
 -------------
