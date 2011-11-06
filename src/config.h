@@ -1,0 +1,1 @@
+/home/allyson/abs/dwm/config.h
