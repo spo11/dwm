@@ -51,6 +51,7 @@ makepkg -efi --skipinteg
 ### Starting this dwm build
 Edit your ~/.xinitrc file and copy and paste the following lines:
 <script src="https://gist.github.com/1342580.js"> </script>
+[Click here to view the gist file of my .xinitrc](https://gist.github.com/1342580)
 
 Troubleshooting
 ----------------
