@@ -15,7 +15,7 @@ static const char colors[NUMCOLORS][ColLast][8] = {
 { "#212121", "#7E62B3", "#121212" }, // 6 = magenta
 { "#212121", "#C0C0C0", "#121212" }, // 7 = white
 };
-static const char font[]            = "-*-terminusmod-medium-r-normal-*-14-*-*-*-*-*-*-*";
+static const char font[]            = "-*-terminusmod-medium-r-normal-*-12-*-*-*-*-*-*-*";
 //static const char font[]   = "-*-terminusmod-medium-r-normal-*-*-*-*-*-*-*-*-*";
 //static const char font[]            = "-*-tamsynmod-medium-r-normal-*-*-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#D4D4D4";
