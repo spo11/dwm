@@ -7,7 +7,7 @@
 static const char colors[NUMCOLORS][ColLast][8] = {
 // border foreground background
 { "#212121", "#696969", "#121212" }, // 0 = normal
-{ "#696969", "#E0E0E0", "#121212" }, // 1 = selected
+{ "#B3B3B3", "#E0E0E0", "#121212" }, // 1 = selected
 { "#212121", "#CF4F88", "#121212" }, // 2 = red
 { "#212121", "#53A6A6", "#121212" }, // 3 = green
 { "#212121", "#FBB600", "#121212" }, // 4 = yellow
@@ -15,8 +15,9 @@ static const char colors[NUMCOLORS][ColLast][8] = {
 { "#212121", "#7E62B3", "#121212" }, // 6 = magenta
 { "#212121", "#C0C0C0", "#121212" }, // 7 = white
 };
-//static const char font[]            = "-*-terminusmod-medium-*-*-*-12-*-*-*-*-*-*-*";
-static const char font[]   = "-*-terminusmod-medium-r-normal-*-*-*-*-*-*-*-*-*";
+static const char font[]            = "-*-terminusmod-medium-r-normal-*-12-*-*-*-*-*-*-*";
+//static const char font[]   = "-*-terminusmod-medium-r-normal-*-*-*-*-*-*-*-*-*";
+//static const char font[]            = "-*-tamsynmod-medium-r-normal-*-*-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#D4D4D4";
 static const char normbgcolor[]     = "#121212";
 static const char normfgcolor[]     = "#949494";
@@ -25,7 +26,7 @@ static const char selbgcolor[]      = "#4A4A4A";
 static const char selfgcolor[]      = "#FFFFFF";
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int gappx     = 2;        /* gap pixel between windows */
+static const unsigned int gappx     = 4;        /* gap pixel between windows */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 

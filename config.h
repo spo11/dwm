@@ -24,9 +24,9 @@ static const char normfgcolor[]     = "#949494";
 static const char selbordercolor[]  = "#D1D1D1";
 static const char selbgcolor[]      = "#4A4A4A";
 static const char selfgcolor[]      = "#FFFFFF";
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int gappx     = 2;        /* gap pixel between windows */
+static const unsigned int gappx     = 4;        /* gap pixel between windows */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
