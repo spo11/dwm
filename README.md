@@ -17,6 +17,9 @@ Patches
 
 General Information
 ---------------------
+### Credits
+Configs and dwm status based on [this](http://dotshare.it/dots/165/).
+
 ### Fonts
 I use the [terminusmod](https://aur.archlinux.org/packages.php?ID=49117) font, which contains glyphs for the status icons. To view other possible options for what characters to include, install **gucharmap**, the GNOME font preview application. Select 'Terminusmod' in the dropdown, and set the size to 12. Select the 'Latin' script. Scroll at the topmost place in the Character Table, and you should see other characters there. 
 
