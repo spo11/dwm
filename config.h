@@ -32,7 +32,7 @@ static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
 //static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static const char      *tags[] = { "01", "02", "03", "04", "05", "06", "07" };
+static const char      *tags[] = { "¹", "www", "code", "edit", "music", "video", "office", "mail" };
 
 #define ALL 0
 #define MAIN 1 << 0
@@ -42,18 +42,33 @@ static const char      *tags[] = { "01", "02", "03", "04", "05", "06", "07" };
 #define MUSIC 1 << 4
 #define VIDEO 1 << 5
 #define OFFICE 1 << 6
+#define MAIL 1 << 7
 static const Rule rules[] = {
-	/* class      instance    title       tags mask     isfloating   monitor */
-	//{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
-	//{ "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 },
-	{ "luakit",     NULL,       NULL,       WWW,          False,       -1 },
-	{ "Gimp",     NULL,       NULL,         EDIT,            True,        -1 },
-	{ "Firefox",  NULL,       NULL,         WWW,       False,       -1 },
-	{ "gVim",       NULL,       NULL,       CODE,         False,       -1 },
-	{ "Minitube",   NULL,       NULL,       VIDEO,        False,       -1 },
-	{ "MPlayer",   NULL,       NULL,       VIDEO,        False,       -1 },
-	{ "Emacs",      NULL,       NULL,       OFFICE,       False,       -1 },
-	{ "Sonata",      NULL,       NULL,       MUSIC,       False,       -1 },
+	/* class           instance        title       tags mask     isfloating      monitor */
+	// Terms
+	{ "Nitrogen",      NULL,           NULL,       MAIN,         True,           -1 },
+	// WWW
+	{ "luakit",        NULL,           NULL,       WWW,          False,          -1 },
+	{ "Firefox",       NULL,           NULL,       WWW,          False,          -1 },
+	{ "Chromium",      NULL,           NULL,       WWW,          False,          -1 },
+	// CODE
+	{ "GVIM",          "GVIM",         "GVIM",     CODE,         False,          -1 },
+	{ "Emacs",         NULL,           NULL,       OFFICE,       False,          -1 },
+	// EDIT
+	{ "Gimp",          NULL,           NULL,       EDIT,         True,           -1 },
+	{ "Inkscape",      NULL,           NULL,       EDIT,         False,          -1 },
+	// MUSIC
+	{ "Sonata",        NULL,           NULL,       MUSIC,        False,          -1 },
+	{ NULL,            "ncmpcpp",      "ncmpcpp",  MUSIC,        False,          -1 },
+	{ NULL,            "pianobar",     "pianobar", MUSIC,        False,          -1 },
+	// VIDEO
+	{ "MPlayer",       NULL,           NULL,       VIDEO,        False,          -1 },
+	{ "Minitube",      NULL,           NULL,       VIDEO,        False,          -1 },
+	// OFFICE
+	{ "LibreOffice",   NULL,           NULL,       OFFICE,       True,           -1 },
+	{ "Zathura",       NULL,           NULL,       OFFICE,       False,          -1 },
+	// MAIL
+	{ NULL,            "mutt",         "mutt",     MAIL,         False,          -1 },
 };
 
 /* layout(s) */
