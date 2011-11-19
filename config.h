@@ -28,7 +28,7 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappx     = 4;        /* gap pixel between windows */
 static const Bool showbar           = True;     /* False means no bar */
-static const Bool topbar            = True;     /* False means bottom bar */
+static const Bool topbar            = False;     /* False means bottom bar */
 
 /* tagging */
 //static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -67,6 +67,8 @@ static const Rule rules[] = {
 	// OFFICE
 	{ "LibreOffice",   NULL,           NULL,       OFFICE,       True,           -1 },
 	{ "Zathura",       NULL,           NULL,       OFFICE,       False,          -1 },
+	{ "Xpdf",       NULL,           NULL,       OFFICE,       False,          -1 },
+	{ "mupdf",       NULL,           NULL,       OFFICE,       False,          -1 },
 	// MAIL
 	{ NULL,            "mutt",         "mutt",     MAIL,         False,          -1 },
 };
