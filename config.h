@@ -51,6 +51,7 @@ static const Rule rules[] = {
 	{ "luakit",        NULL,           NULL,       WWW,          False,          -1 },
 	{ "Firefox",       NULL,           NULL,       WWW,          False,          -1 },
 	{ "Chromium",      NULL,           NULL,       WWW,          False,          -1 },
+	{ "Transmission",  NULL,           NULL,       WWW,          False,          -1 },
 	// CODE
 	{ "GVIM",          "GVIM",         "GVIM",     CODE,         False,          -1 },
 	{ "Emacs",         NULL,           NULL,       OFFICE,       False,          -1 },
